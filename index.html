@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- All the necessary initial scaling and styling that the webpage will follow -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payamullah Erfan's Portfolio Website</title>
+    <link rel ="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <!-- This is where navigation of the tabs and the logo properties are held -->
+        <nav>
+            <img src="Pictures/logo.png" alt="logo" width="120" height="80">
+            <ul>
+                <li id="tab-text"><a href="#">Home</a></li>
+                <li id="tab-text"><a href="#">About</a></li>
+                <li id="tab-text"><a href="#">Projects</a></li>
+                <li id="tab-text"><a href="#">Portfolio</a></li>
+                <li id="tab-text"><a href="#">Contact</a></li>
+                <li id="ijuyghhy7ik;m`-text"><a href="secret.html">Secret</a></li>
+            </ul>
+        </nav>
+        <!-- Intro text to the site that is further styled with the style.css page among other things on the site -->
+        <div class="header-text">
+            <p>Computer Science Major at UC Berkeley</p>
+            <h1>Hey, I'm<span> Payamullah<br></span>Erfan</h1>
+        </div>
+    </div>
+</div>
+
+<!-- This is where the particles used from https://vincentgarreau.com/particles.js/ are utilized -->
+<div id="particles-js"></div>
+<script src="particles.js"></script>
+<script src="app.js"></script>
+
+<!-- Home button html stuff -->
+<div id="home">
+
+</div>
+
+<!-- About section of the page -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1"></div>
+                <img src="pictures/ss">
+            <div class="about-col-2"></div>
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt 
+                    ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, 
+                    quis nostrud exercitation ullamco 
+                    laboris nisi ut aliquip ex ea 
+                    commodo consequat. Duis aute irure 
+                    dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt 
+                    in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+        </div>
+        <!-- Where all the tab links call on opentab function to deal with hiding other tabs until they are clicked on 
+        and having a currrent tab etc. -->
+        <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+        </div>
+        <!-- Where the skills are included and styled to disappear when only when clicked off of -->
+        <div class="tab-contents active-tab" id="skills">
+            <ul>
+                <li><span>Coding Languages</span><br>Coding in Java, Python,<br>CSS/HTML/Javascript</li>
+                <li><span>Characteristics</span><br>Hardworking, Critical Thinking,<br>Adapatability, Thrives in <br>collaborative setting<br></li>
+                <li><span>Languages</span><br>English, Dari, Pashtu, <br>Hindi, Spanish</li>
+            </ul>
+        </div>
+
+        <div class="tab-contents" id="experience">
+            <ul>
+                <li><span></span><br><br></li>
+                <li><span></span><br></li>
+                <li><span></span><br></li>
+            </ul>
+        </div>
+
+        <div class="tab-contents" id="education">
+            <ul>
+                <li><span>University</span><br>University of California, Berkeley | Graduating 2025</li>
+                <li><span>Degree</span><br>BA in Computer Science</li>
+                <li><span>Minor(s)</span><br>Data Science (Robotics Emphasis), Bioengineering</li>
+                <br><br>
+                <li><span>High School</span><br>Engineering PLTW Program</li>
+                <li><span>Certificates</span><br></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- <div id="projects">
+    <div class="container">
+
+    </div>
+</div>
+
+<div id="portfolio">
+
+</div> -->
+
+
+<!-- <div id="secret">
+
+</div> -->
+
+
+<!---------------projects----------------->
+
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+            <div>
+                <h2>NGordnet (Wordnet)</h2>
+                <p>The project aims to incorporate WordNet, 
+                    a semantic lexicon for the English language, 
+                    into the NGordnet tool. The main task is to 
+                    implement a HyponymsHandler that returns hyponyms 
+                    of a given word based on the WordNet dataset. The 
+                    project is structured in several steps, including 
+                    creating a directed graph class to represent WordNet 
+                    data, implementing hyponyms retrieval, handling lists 
+                    of words, handling the k parameter (limiting the number 
+                    of results), and optionally adding more features like 
+                    plotting relative frequencies. The project emphasizes 
+                    design decisions, graph operations, data processing, 
+                    and interaction between Java, HTML, and JavaScript components. </p>
+                    <a href="https://fa22.datastructur.es/materials/proj/proj2b/"target="_blank">Learn More</a>
+                <h2>Scheme Interpreter</h2>
+                <p>Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt 
+                    ut labore et dolore magna aliq</p>
+                    <a href="https://inst.eecs.berkeley.edu/~cs61a/sp22/proj/scheme/" target="_blank">Learn More</a>
+                <h2>Deques</h2>
+                <p>Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt 
+                    ut labore et dolore magna aliq</p>
+                    <a href="https://fa22.datastructur.es/materials/proj/proj1/"" target="_blank">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <h1 class="sub-title">Contact Me</h1>
+    </div>
+</div>
+
+<!-- Code that given a tab opens it and closes any previous tabs 
+    that were opened in the about me section specifically -->
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for(tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+</body>
+</html>
